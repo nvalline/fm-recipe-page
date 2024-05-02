@@ -21,6 +21,11 @@
 	--lightGrey: hsl(30, 18%, 87%);
 	--wengeBrown: hsl(30, 10%, 34%);
 	--darkCharcoal: hsl(24, 5%, 18%);
+	/* Typography */
+	--heading-lg: clamp(2.25rem, 2.162rem + 0.3756vw, 2.5rem);
+	--heading-md: 1.75rem;
+	--heading-sm: 1.25rem;
+	--body: 1rem;
 }
 
 /* Box Sizing Rules */
@@ -40,4 +45,78 @@
 html,
 body {
 	height: 100%;
+}
+
+body {
+	font-family: 'Outfit', sans-serif;
+	font-size: var(--body);
+	line-height: 1.5;
+}
+
+.recipe {
+	img {
+		height: auto;
+		width: 100%;
+	}
+}
+
+.recipe-details {
+	padding: 2.5rem 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: 2rem;
+}
+
+.title {
+	width: 100%;
+
+	h1 {
+		margin-bottom: 1.5rem;
+		font-family: 'YoungSerif', serif;
+		font-size: var(--heading-lg);
+		font-weight: 400;
+		color: var(--darkCharcoal);
+	}
+
+	p {
+		color: var(--wengeBrown);
+	}
+}
+
+.prep {
+	width: 100%;
+	padding: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: 1rem;
+	background-color: var(--roseWhite);
+	border-radius: 12px;
+
+	h3 {
+		font-size: var(--heading-sm);
+		font-weight: 600;
+		color: var(--darkRaspberry);
+	}
+
+	ul {
+		margin-left: 1.5rem;
+
+		li {
+			padding-left: 1rem;
+			color: var(--wengeBrown);
+		}
+
+		li::marker {
+			margin-right: 1rem;
+			color: var(--darkRaspberry);
+		}
+
+		li span {
+			font-weight: 700;
+		}
+	}
 }
