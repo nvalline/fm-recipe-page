@@ -118,5 +118,20 @@ body {
 		li span {
 			font-weight: 700;
 		}
+
+		li:not(:last-child) {
+			margin-bottom: 0.5rem;
+		}
 	}
+}
+
+h2 {
+	font-family: 'YoungSerif', serif;
+	font-size: var(--heading-md);
+	font-weight: 400;
+	color: var(--nutmeg);
+}
+
+.ingredients {
+	width: 100%;
 }
