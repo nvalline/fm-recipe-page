@@ -130,16 +130,24 @@ hr {
 	}
 }
 
-.titles {
+.section-titles {
 	font-family: 'YoungSerif', serif;
 	font-size: var(--heading-md);
 	font-weight: 400;
 	color: var(--nutmeg);
 }
 
-.ingredients {
+.ingredients,
+.instructions,
+.nutrition {
 	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 1.5rem;
+}
 
+.ingredients {
 	ul {
 		margin-left: 1.5rem;
 
@@ -160,8 +168,6 @@ hr {
 }
 
 .instructions {
-	width: 100%;
-
 	ol {
 		margin-left: 1.5rem;
 
@@ -181,6 +187,45 @@ hr {
 
 		li:not(:last-child) {
 			margin-bottom: 0.5rem;
+		}
+	}
+}
+
+.nutrition {
+	p {
+		color: var(--wengeBrown);
+	}
+
+	table {
+		width: 100%;
+		border-collapse: collapse;
+
+		tr:not(:last-child) {
+			border-bottom: 1px solid var(--lightGrey);
+			border-collapse: collapse;
+		}
+
+		tr td {
+			padding: 0.75rem 0;
+		}
+
+		tr:first-child td {
+			padding-top: 0;
+		}
+
+		tr:last-child td {
+			padding-bottom: 0;
+		}
+
+		td:first-child {
+			padding-left: 2rem;
+			color: var(--wengeBrown);
+		}
+
+		td:last-child {
+			padding-right: 1.5rem;
+			font-weight: 700;
+			color: var(--nutmeg);
 		}
 	}
 }
