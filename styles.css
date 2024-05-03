@@ -53,6 +53,11 @@ body {
 	line-height: 1.5;
 }
 
+hr {
+	width: 100%;
+	border: 1px solid var(--lightGrey);
+}
+
 .recipe {
 	img {
 		height: auto;
@@ -125,7 +130,7 @@ body {
 	}
 }
 
-h2 {
+.titles {
 	font-family: 'YoungSerif', serif;
 	font-size: var(--heading-md);
 	font-weight: 400;
@@ -134,4 +139,48 @@ h2 {
 
 .ingredients {
 	width: 100%;
+
+	ul {
+		margin-left: 1.5rem;
+
+		li {
+			padding-left: 1rem;
+			color: var(--wengeBrown);
+		}
+
+		li::marker {
+			margin-right: 1rem;
+			color: var(--nutmeg);
+		}
+
+		li:not(:last-child) {
+			margin-bottom: 0.5rem;
+		}
+	}
+}
+
+.instructions {
+	width: 100%;
+
+	ol {
+		margin-left: 1.5rem;
+
+		li {
+			padding-left: 1rem;
+			color: var(--wengeBrown);
+		}
+
+		li::marker {
+			margin-right: 1rem;
+			color: var(--nutmeg);
+		}
+
+		li span {
+			font-weight: 700;
+		}
+
+		li:not(:last-child) {
+			margin-bottom: 0.5rem;
+		}
+	}
 }
