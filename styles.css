@@ -105,7 +105,7 @@ hr {
 	background-color: var(--roseWhite);
 	border-radius: 12px;
 
-	h3 {
+	h2 {
 		font-size: var(--heading-sm);
 		font-weight: 600;
 		color: var(--darkRaspberry);
