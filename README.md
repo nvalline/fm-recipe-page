@@ -24,7 +24,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Here](https://www.frontendmentor.io/solutions/recipe-page-html-and-css-koN1Liuwa1)
 - Live Site URL: [Here](https://nv-recipe-page.netlify.app/)
 
 ## My process
